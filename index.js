@@ -16,4 +16,18 @@ Musician.init({
     timestamps: false
 })
 
-module.exports = {Musician}
+//Dog class
+class Dog extends Model {
+    //add query methods here
+}
+
+//create attributes for model using init method
+Dog.init({
+    name: DataTypes.STRING,
+    Breed: DataTypes.STRING
+}, {
+    sequelize, //specifies what database our model is stored in
+    timestamps: false
+})
+
+module.exports = {Musician, Dog}
